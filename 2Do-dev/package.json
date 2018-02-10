@@ -1,0 +1,24 @@
+{
+  "name": "2do",
+  "version": "0.0.0",
+  "description": "A simple todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Shobs@github.com/Shobs/2Do.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shobs/2Do/issues"
+  },
+  "homepage": "https://github.com/Shobs/2Do#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}

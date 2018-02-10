@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title> ToDo List </title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+  <link href="/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h2> A ToDo List </h2>
+
+    <form action ="/addtask" method="POST">
+
+      <input type="text" name="newtask" placeholder="add new task">
+      <button> Add Task </button>
+
+      <h2> Added Task </h2>
+
+      <% for( var i = 0; i < list_of_task.length; i++){ %>
+      <li><input type="checkbox" name="check" value="<%= list_of_task[i] %>" /> <%= list_of_task[i] %> </li>
+      <% } %>
+
+      <button formaction="/removetask" type="submit" id="top"> Remove </button>
+    </form>
+
+    <h2> Completed task </h2>
+
+    <% for(var i = 0; i < completed_task.length; i++){ %>
+    <li><%= completed_task[i] %> </li>
+    <% } %>
+
+  </div>
+
+</body>
+</html>
